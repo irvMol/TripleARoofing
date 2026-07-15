@@ -1,0 +1,29 @@
+{
+    "name": "vigorous-roofing",
+    "version": "1.0.0",
+    "description": "A simple Eleventy website.",
+    "main": "index.md",
+    "scripts": {
+        "build:css": "postcss src/assets/css/styles.css -o src/assets/css/output.css",
+        "start": "npm run build:css && npx @11ty/eleventy --serve --port=8080 --host=0.0.0.0",
+        "watch:css": "postcss src/assets/css/styles.css -o src/assets/css/output.css --watch",
+        "build": "NODE_ENV=production npm run build:css && npx @11ty/eleventy",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.0",
+        "@playwright/test": "^1.59.1",
+        "@tailwindcss/postcss": "^4.2.4",
+        "autoprefixer": "^10.5.0",
+        "postcss": "^8.5.13",
+        "postcss-cli": "^11.0.1",
+        "tailwindcss": "^4.2.4"
+    },
+    "dependencies": {
+        "@11ty/eleventy-img": "^6.0.4",
+        "sharp": "^0.34.5"
+    }
+}

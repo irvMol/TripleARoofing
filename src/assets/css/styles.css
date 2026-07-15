@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@source "../../*.{njk,md,html}";
+@source "../../_includes/**/*.{njk,html}";
+@source "../../_layouts/**/*.{njk,html}";
+@source "../../services/**/*.{md,njk,html}";
+
+@theme {
+  --color-brand-grey: #0f766e;
+  --color-brand-red: #1f2937;
+  --color-brand-dark-grey: #d1d5db;
+}

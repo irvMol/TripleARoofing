@@ -1,0 +1,11 @@
+{$SITE_DOMAIN}, www.{$SITE_DOMAIN} {
+    root * /srv/site/_site
+    encode gzip
+    handle /api/auth* {
+        reverse_proxy oauth:3000
+    }
+    handle {
+        try_files {path} {path}.html {path}/
+        file_server
+    }
+}

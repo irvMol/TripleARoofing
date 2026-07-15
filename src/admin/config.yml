@@ -1,0 +1,83 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  branch: main
+  base_url: https://YOUR_DOMAIN
+  auth_endpoint: /api/auth
+
+# Cloudinary media library — images never touch your VPS
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: CLOUDINARY_CLOUD_NAME
+    api_key: CLOUDINARY_API_KEY
+
+# Fallback local media folder (used if cloudinary is not configured)
+media_folder: src/assets/images
+public_folder: /assets/images
+
+# Site URL for previews
+site_url: https://YOUR_DOMAIN
+display_url: https://YOUR_DOMAIN
+
+collections:
+  # ── Service Pages ──────────────────────────────────────
+  - name: services
+    label: Service Pages
+    folder: src/services
+    create: false
+    slug: '{{slug}}'
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: service.njk }
+      - { label: Page Title, name: title, widget: string }
+      - { label: Description, name: description, widget: text }
+      - label: Hero Image
+        name: heroImage
+        widget: image
+        required: false
+        hint: 'Large background image for the top of the page'
+      - label: Service Image
+        name: serviceImage
+        widget: image
+        required: false
+        hint: 'Photo shown in the main content section'
+      - { label: Permalink, name: permalink, widget: hidden }
+      - label: Content
+        name: body
+        widget: markdown
+        hint: 'Main service description — supports bullet points and headings'
+
+  # ── Site Settings ──────────────────────────────────────
+  - name: settings
+    label: Site Settings
+    files:
+      - label: Business Info
+        name: business
+        file: src/_data/business.json
+        fields:
+          - { label: Business Name, name: name, widget: string }
+          - { label: Phone Number, name: phone, widget: string }
+          - {
+              label: Phone (Display Format),
+              name: phoneDisplay,
+              widget: string,
+            }
+          - { label: Email, name: email, widget: string }
+          - { label: Address, name: address, widget: string }
+          - { label: Service Area, name: serviceArea, widget: string }
+          - label: Business Hours
+            name: hours
+            widget: string
+            hint: 'e.g. Mon–Fri 8am–6pm, Sat 9am–3pm'
+          - {
+              label: Facebook URL,
+              name: facebook,
+              widget: string,
+              required: false,
+            }
+          - {
+              label: WhatsApp Number,
+              name: whatsapp,
+              widget: string,
+              required: false,
+            }

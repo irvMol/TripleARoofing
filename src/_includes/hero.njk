@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<header class="relative overflow-hidden bg-brand-dark-grey text-white min-h-[70vh] flex items-center">
+  <div class="absolute inset-0 z-0">
+    <video autoplay muted loop playsinline poster="/assets/images/hero-poster.png" class="h-full w-full object-cover grayscale brightness-[0.3] contrast-[1.1]">
+      <source src="/assets/videos/video-hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="absolute inset-0 z-10 opacity-20 pointer-events-none">
+    <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-red blur-3xl"></div>
+  </div>
+  <div class="relative z-20 w-full max-w-6xl mx-auto px-6 py-20 md:py-28">
+    <div class="max-w-3xl mx-auto text-center">
+      <div class="mb-10 flex justify-center">
+        <div class="w-full max-w-[220px] md:max-w-[320px]">
+          <img src="{{ site.logo }}" alt="{{ site.logoAlt }}" class="h-auto w-full border-b-4 border-brand-red pb-4">
+        </div>
+      </div>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.05] mb-6 drop-shadow-lg">{{ hero_title }}</h1>
+      <p class="max-w-xl mx-auto text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-10 px-2 drop-shadow-md">{{ hero_subtitle }}</p>
+      <a href="tel:{{ business.phone }}" class="inline-flex items-center justify-center bg-brand-red hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-xl hover:scale-[1.02]">{{ hero_cta_text }}</a>
+    </div>
+  </div>
+</header>
+<div class="w-full overflow-x-hidden">
+  <div class="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-16 py-16 md:py-20">
+    {{ content | safe }}
+  </div>
+</div>

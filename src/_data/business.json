@@ -1,0 +1,15 @@
+{
+  "name": "Triple A Roofing",
+  "phone": "817-228-5024",
+  "phoneDisplay": "(817) 228-5024",
+  "email": "support@triplearoofs.com",
+  "address": "Your Business Address",
+  "serviceArea": "Dallas, TX",
+  "hours": "Mon–Fri 8am–6pm",
+  "facebook": "https://facebook.com/triplearoofs",
+  "whatsapp": "",
+  "stats": {
+    "years": "10+",
+    "jobs": "500+"
+  }
+}

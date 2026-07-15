@@ -1,0 +1,16 @@
+services:
+  caddy:
+    volumes:
+      - ./Caddyfile.prod:/etc/caddy/Caddyfile
+      - site_output:/srv/site/_site    # read from same named volume
+    ports:
+      - "443:443"
+
+  eleventy:
+    command: echo "build handled by CI"
+  
+  oauth:
+    restart: always
+
+volumes:
+  site_output:

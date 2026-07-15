@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title or business.name }}</title>
+
+<link rel="stylesheet" href="/assets/css/output.css">
+<style>
+  :root {
+    --color-brand-red: {{ theme.primaryColor }};
+    --color-brand-dark-grey: {{ theme.darkColor }};
+    --color-brand-grey: {{ theme.greyColor }};
+  }
+</style>
+<meta name="description" content="{{ description or site.description }}">
+</head>
+
+<body class="bg-brand-grey text-white font-sans antialiased overflow-x-hidden">
+    <div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 bg-brand-dark-grey/90 backdrop-blur-sm border-b border-white/10">
+<div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
+
+<a href="/" class="transition-transform hover:scale-105 flex-shrink-0">
+<img src="{{ site.logo }}" alt="{{ site.logoAlt }}" class="h-12 w-auto" />
+</a>
+
+<!-- Desktop Nav -->
+<nav class="hidden md:block">
+<ul class="flex items-center space-x-8 text-sm font-medium tracking-wide">
+<li><a href="/" class="hover:text-brand-red transition-colors">HOME</a></li>
+<li><a href="/#services" class="hover:text-brand-red transition-colors">SERVICES</a></li>
+<li><a href="/gallery/" class="hover:text-brand-red transition-colors">GALLERY</a></li>
+<li>
+<a href="/contact" class="bg-brand-red px-5 py-2 rounded shadow-lg hover:bg-red-700 transition-all">
+CONTACT
+</a>
+</li>
+</ul>
+</nav>
+
+<!-- Mobile Hamburger -->
+<button id="mobile-menu-button" class="md:hidden flex items-center justify-center w-11 h-11 rounded-lg border border-white/10 text-white hover:bg-white/5 transition" aria-label="Open menu">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+</svg>
+</button>
+</div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden border-t border-white/10 bg-brand-dark-grey/95 backdrop-blur-md">
+<nav class="max-w-6xl mx-auto px-4 py-4">
+<ul class="flex flex-col space-y-2 text-sm font-medium tracking-wide">
+<li><a href="/" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors">HOME</a></li>
+<li><a href="/#services" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors">SERVICES</a></li>
+<li><a href="/gallery/" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors">GALLERY</a></li>
+<li class="pt-2">
+<a href="/contact" class="block text-center bg-brand-red px-5 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-all">CONTACT</a>
+</li>
+</ul>
+</nav>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const button = document.getElementById("mobile-menu-button");
+  const menu = document.getElementById("mobile-menu");
+  button.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+});
+</script>
+
+</header>
+
+<main class="flex-grow w-full">
+        {{ content | safe }}
+</main>
+        <footer class="bg-brand-dark-grey/90 border-t border-white/5 py-12">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                    <div class="text-center md:text-left">
+                        <p class="text-gray-400 text-sm">
+                            &copy; {{ "2026" }} {{ business.name }}.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-1">Serving {{ business.serviceArea }}</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="tel:{{ business.phone }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                            <span class="text-xs uppercase font-bold tracking-widest">Call</span>
+                        </a>
+                        <a href="mailto:{{ business.email }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                            <span class="text-xs uppercase font-bold tracking-widest">Email</span>
+                        </a>
+                        {% if business.facebook %}
+                        <a href="{{ business.facebook }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                            <span class="text-xs uppercase font-bold tracking-widest">Facebook</span>
+                        </a>
+                        {% endif %}
+                        {% if business.whatsapp %}
+                        <a href="https://wa.me/{{ business.whatsapp }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                            <span class="text-xs uppercase font-bold tracking-widest">Whatsapp</span>
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="hidden fixed inset-0 z-[100] items-center justify-center bg-black/90 opacity-0 transition-opacity duration-300 p-4">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl leading-none hover:text-brand-red transition-colors" aria-label="Close">
+    &times;
+  </button>
+  <figure class="max-w-4xl max-h-full flex flex-col items-center">
+    <img id="lightbox-img" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl">
+    <figcaption id="lightbox-caption" class="text-gray-300 text-sm mt-4 text-center"></figcaption>
+  </figure>
+</div>
+
+<script src="/assets/js/lightbox.js" defer></script>
+</body>
+</html>

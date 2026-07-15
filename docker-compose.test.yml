@@ -1,0 +1,14 @@
+services:
+  tests:
+    profiles: ["test"]
+    image: mcr.microsoft.com/playwright:v1.59.1-jammy
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      - .:/work
+
+    working_dir: /work
+
+    command: sh -c "npm install && npx playwright test"

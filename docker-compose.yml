@@ -1,0 +1,51 @@
+name: site
+
+services:
+  eleventy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+      - site_output:/app/_site
+      - eleventy_cache:/app/.cache
+    working_dir: /app
+    networks:
+      - web
+
+  caddy:
+    image: caddy:latest
+    env_file:
+      - .env
+    volumes:
+      - ./Caddyfile.dev:/etc/caddy/Caddyfile
+      - site_output:/srv/site/_site
+      - caddy_data:/data
+      - caddy_config:/config
+    ports:
+      - "80:80"
+    networks:
+      - web
+
+  oauth:
+    build:
+      context: ./oauth
+      dockerfile: Dockerfile.oauth
+    environment:
+      NODE_ENV: production
+      ORIGIN: ${SITE_ORIGIN}
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET}
+    networks:
+      - web
+
+networks:
+  web:
+
+volumes:
+  node_modules:
+  caddy_data:
+  caddy_config:
+  site_output:
+  eleventy_cache:

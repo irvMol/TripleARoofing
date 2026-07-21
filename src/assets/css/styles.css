@@ -6,7 +6,65 @@
 @source "../../services/**/*.{md,njk,html}";
 
 @theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Archivo Black', sans-serif; /* for headlines */
+
   --color-brand-grey: #0f766e;
-  --color-brand-red: #1f2937;
+  --color-brand-primary: #1f2937;
   --color-brand-dark-grey: #d1d5db;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
+
+@layer components {
+  .hero-image-frame {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+  }
+
+  .hero-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mask-image:
+      linear-gradient(to bottom, black 70%, transparent 100%),
+      linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+      );
+    mask-composite: intersect;
+    -webkit-mask-image:
+      linear-gradient(to bottom, black 70%, transparent 100%),
+      linear-gradient(
+        to right,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+      );
+    -webkit-mask-composite: source-in;
+  }
+
+  .hero-image-frame::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-brand-primary);
+    opacity: 0.12;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    z-index: 1;
+  }
 }

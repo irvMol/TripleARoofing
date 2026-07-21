@@ -1,0 +1,46 @@
+<div class="relative mb-24">
+  <div id="services-track" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 -mx-4 px-4 scrollbar-hide">
+    {% for service in services %}
+    <a href="/services/{{ service.slug }}/" class="snap-start shrink-0 w-[280px] sm:w-[320px] block group">
+      <div class="h-full p-10 border-l-4 border-brand-primary bg-gray-50 text-[#3d3e3f] transition-all hover:shadow-xl hover:bg-white">
+        <div class="w-16 h-16 bg-brand-primary/10 text-brand-primary rounded-lg flex items-center justify-center mb-6 group-hover:bg-brand-primary group-hover:text-white transition-colors">
+          <span class="text-2xl">{{ service.icon }}</span>
+        </div>
+        <h3 class="text-xl font-bold mb-3">{{ service.title }}</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">{{ service.description }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="flex justify-center gap-3 mt-6">
+    <button id="services-prev" aria-label="Previous services" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-brand-primary hover:border-brand-primary transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+      </svg>
+    </button>
+    <button id="services-next" aria-label="Next services" class="w-11 h-11 rounded-full border border-white/20 text-white flex items-center justify-center hover:bg-brand-primary hover:border-brand-primary transition-colors">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const track = document.getElementById("services-track");
+  const prevBtn = document.getElementById("services-prev");
+  const nextBtn = document.getElementById("services-next");
+  if (!track || !prevBtn || !nextBtn) return;
+
+  const scrollAmount = () => track.querySelector("a")?.offsetWidth + 24 || 300;
+
+  prevBtn.addEventListener("click", () => {
+    track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+  });
+  nextBtn.addEventListener("click", () => {
+    track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+  });
+});
+</script>

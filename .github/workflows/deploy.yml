@@ -1,52 +1,52 @@
-# name: Deploy
-# on:
-#   push:
-#     branches:
-#       - main
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Deploy to server via SSH
-#         uses: appleboy/ssh-action@v1.2.2
-#         with:
-#           host: ${{ secrets.HOST }}
-#           username: ${{ secrets.USERNAME }}
-#           key: ${{ secrets.SSHKEY }}
-#           port: ${{ secrets.PORT }}
-#           script: |
-#             cd /srv/vigorous
-#             git fetch origin
-#             git reset --hard origin/main
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to server via SSH
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSHKEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            cd /srv/tripleA
+            git fetch origin
+            git reset --hard origin/main
 
-#             # Prevent node_modules from accumulating on host
-#             rm -rf /srv/vigorous/node_modules || true
+            # Prevent node_modules from accumulating on host
+            rm -rf /srv/tripleA/node_modules || true
 
-#             # Bring everything down cleanly
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml down
-#             docker volume rm vigorous_site_output || true
+            # Bring everything down cleanly
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml down
+            docker volume rm site_site_output || true
 
-#             # Prune aggressively on every deploy
-#             docker image prune -f
-#             docker builder prune -f
-#             docker volume prune -f --filter "label!=keep"
+            # Prune aggressively on every deploy
+            docker image prune -f
+            docker builder prune -f
+            docker volume prune -f --filter "label!=keep"
 
-#             # Wipe eleventy cache
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy \
-#               sh -c "rm -rf /app/_site/img && rm -rf /app/.cache"
+            # Wipe eleventy cache
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy \
+              sh -c "rm -rf /app/_site/img && rm -rf /app/.cache"
 
-#             # Separated build steps to avoid OOM
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm install
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm run build:css
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npx @11ty/eleventy
+            # Separated build steps to avoid OOM
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm install
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm run build:css
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npx @11ty/eleventy
 
-#             # Verify build before starting
-#             echo "=== Build output check ==="
-#             find _site/assets/images | head -20
-#             echo "=== Total files in _site ==="
-#             find _site | wc -l
-#             echo "=== Disk space remaining ==="
-#             df -h /
+            # Verify build before starting
+            echo "=== Build output check ==="
+            find _site/assets/images | head -20
+            echo "=== Total files in _site ==="
+            find _site | wc -l
+            echo "=== Disk space remaining ==="
+            df -h /
 
-#             # Start full stack
-#             docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+            # Start full stack
+            docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build

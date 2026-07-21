@@ -11,14 +11,14 @@ layout: base.njk
 <div class="relative z-10 w-full max-w-5xl mx-auto px-6 pt-16 pb-20">
 <nav aria-label="Breadcrumb" class="mb-8">
 <ol class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-widest text-white/40">
-<li><a href="/" class="hover:text-brand-red transition-colors">Home</a></li>
+<li><a href="/" class="hover:text-brand-primary transition-colors">Home</a></li>
 <li class="text-white/20">/</li>
-<li><a href="/services/" class="hover:text-brand-red transition-colors">Services</a></li>
+<li><a href="/services/" class="hover:text-brand-primary transition-colors">Services</a></li>
 <li class="text-white/20">/</li>
-<li class="text-brand-red">{{ title }}</li>
+<li class="text-brand-primary">{{ title }}</li>
 </ol>
 </nav>
-<p class="uppercase tracking-wide md:tracking-widest text-xs md:text-sm text-brand-red font-semibold mb-3 leading-relaxed">
+<p class="uppercase tracking-wide md:tracking-widest text-xs md:text-sm text-brand-primary font-semibold mb-3 leading-relaxed">
 Services — {{ business.serviceArea }}
 </p>
 <h1 class="text-4xl sm:text-5xl md:text-6xl font-black leading-tight mb-5">
@@ -28,7 +28,7 @@ Services — {{ business.serviceArea }}
 {{ description }}
 </p>
 <div class="flex flex-col sm:flex-row gap-4 flex-wrap">
-<a href="/contact/" class="inline-flex items-center justify-center bg-brand-red text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-lg hover:bg-red-700">
+<a href="/contact/" class="inline-flex items-center justify-center bg-brand-primary text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-lg hover:bg-red-700">
 Get a Free Estimate
 </a>
 <a href="tel:{{ business.phone }}" class="inline-flex items-center justify-center border border-white/35 text-white font-bold py-4 px-8 rounded-full transition duration-300">
@@ -55,14 +55,14 @@ Get a Free Estimate
 <section class="bg-[#f5f5f5] py-20">
 <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 <div>
-<p class="uppercase tracking-widest text-xs text-brand-red font-bold mb-4">
+<p class="uppercase tracking-widest text-xs text-brand-primary font-bold mb-4">
 Trusted Solutions
 </p>
 <h2 class="text-4xl font-black text-[#2f2f2f] leading-tight mb-4">
-Professional <span class="text-brand-red">{{ title }}</span>
+Professional <span class="text-brand-primary">{{ title }}</span>
 </h2>
-<div class="w-16 h-1 bg-brand-red rounded-full mb-8"></div>
-<div class="prose prose-base md:prose-lg prose-gray max-w-none text-gray-700 prose-headings:text-[#2f2f2f] prose-headings:font-black prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-li:marker:text-brand-red">
+<div class="w-16 h-1 bg-brand-primary rounded-full mb-8"></div>
+<div class="prose prose-base md:prose-lg prose-gray max-w-none text-gray-700 prose-headings:text-[#2f2f2f] prose-headings:font-black prose-p:text-gray-700 prose-p:leading-relaxed prose-li:text-gray-700 prose-li:marker:text-brand-primary">
 {{ content | safe }}
 </div>
 </div>
@@ -83,19 +83,19 @@ Service Image
 </div>
 <div class="mt-6 grid grid-cols-3 gap-px bg-gray-200 rounded-2xl overflow-hidden shadow-md">
 <div class="bg-white p-4 text-center">
-<p class="text-2xl font-black text-brand-red">{{ business.stats.years or "10+" }}</p>
+<p class="text-2xl font-black text-brand-primary">{{ business.stats.years or "10+" }}</p>
 <p class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
 Years in Business
 </p>
 </div>
 <div class="bg-white p-4 text-center">
-<p class="text-2xl font-black text-brand-red">{{ business.stats.jobs or "500+" }}</p>
+<p class="text-2xl font-black text-brand-primary">{{ business.stats.jobs or "500+" }}</p>
 <p class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
 Jobs Done
 </p>
 </div>
 <div class="bg-white p-4 text-center">
-<p class="text-2xl font-black text-brand-red">100%</p>
+<p class="text-2xl font-black text-brand-primary">100%</p>
 <p class="text-xs text-gray-500 mt-1 uppercase tracking-wide">
 Licensed
 </p>
@@ -109,7 +109,7 @@ Licensed
 <section class="bg-white py-20 border-t border-gray-100">
 <div class="max-w-6xl mx-auto px-6">
 <div class="text-center mb-14">
-<p class="uppercase tracking-widest text-xs text-brand-red font-bold mb-3">
+<p class="uppercase tracking-widest text-xs text-brand-primary font-bold mb-3">
 Our Promise
 </p>
 <h2 class="text-3xl md:text-4xl font-black text-[#2f2f2f] mb-3">
@@ -121,8 +121,8 @@ Dependable workmanship across {{ business.serviceArea }}.
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
 <div class="p-8 rounded-2xl border border-gray-100 transition-all duration-300">
-<div class="w-11 h-11 rounded-xl bg-brand-red/10 flex items-center justify-center mb-5">
-<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="w-11 h-11 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-5">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
 </svg>
 </div>
@@ -134,8 +134,8 @@ Skilled professionals focused on long-lasting results — every job, every time.
 </p>
 </div>
 <div class="p-8 rounded-2xl border border-gray-100 transition-all duration-300">
-<div class="w-11 h-11 rounded-xl bg-brand-red/10 flex items-center justify-center mb-5">
-<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="w-11 h-11 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-5">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
 </svg>
 </div>
@@ -147,8 +147,8 @@ Durable products built to last, backed by manufacturer warranties.
 </p>
 </div>
 <div class="p-8 rounded-2xl border border-gray-100 transition-all duration-300">
-<div class="w-11 h-11 rounded-xl bg-brand-red/10 flex items-center justify-center mb-5">
-<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="w-11 h-11 rounded-xl bg-brand-primary/10 flex items-center justify-center mb-5">
+<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
 </svg>
 </div>
@@ -164,7 +164,7 @@ Clear estimates and responsive service from first call to final inspection.
 </section>
 
 <!-- CTA -->
-<section class="bg-brand-red text-white py-20 relative overflow-hidden">
+<section class="bg-brand-primary text-white py-20 relative overflow-hidden">
 <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%); background-size: 12px 12px;"></div>
 <div class="relative max-w-4xl mx-auto px-6 text-center">
 <p class="uppercase tracking-widest text-xs text-white/60 font-bold mb-4">
@@ -177,7 +177,7 @@ Need {{ title }}?
 Contact {{ business.name }} today for a free inspection and no-obligation estimate.
 </p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a href="/contact/" class="inline-flex items-center justify-center bg-white text-brand-red font-black py-4 px-8 rounded-full shadow-xl">
+<a href="/contact/" class="inline-flex items-center justify-center bg-white text-brand-primary font-black py-4 px-8 rounded-full shadow-xl">
 Request a Free Estimate
 </a>
 <a href="tel:{{ business.phone }}" class="inline-flex items-center justify-center border-2 border-white/50 text-white font-bold py-4 px-8 rounded-full">

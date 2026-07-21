@@ -3,5 +3,9 @@
   "description": "A modern, reusable website template for service-based businesses.",
   "logo": "/assets/images/logo/logo.png",
   "logoAlt": "Your Business Logo",
-  "siteUrl": "https://triplearoofs.com"
+  "siteUrl": "https://triplearoofs.com",
+  "heroStyle": "split",
+  "heroImage": "/assets/images/hero/hero-image.jpg",
+  "servicesStyle": "carousel",
+  "galleryStyle": "video"
 }

@@ -11,7 +11,7 @@ templateEngineOverride: njk
       <h1 class="text-5xl font-black text-white tracking-tight">
         Get in Touch
       </h1>
-      <p class="text-brand-red font-bold uppercase tracking-widest mt-3">
+      <p class="text-brand-primary font-bold uppercase tracking-widest mt-3">
         We’re Here to Help
       </p>
       <p class="text-gray-300 mt-4 text-lg">
@@ -19,7 +19,7 @@ templateEngineOverride: njk
       </p>
       <a
         href="{{ business.phone }}"
-        class="inline-block mt-6 text-brand-red font-black text-2xl hover:underline"
+        class="inline-block mt-6 text-brand-primary font-black text-2xl hover:underline"
       >
         {{ business.phoneDisplay }}
       </a>

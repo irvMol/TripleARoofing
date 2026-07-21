@@ -10,12 +10,12 @@
 <div>
   <label for="name" class="block text-sm font-bold text-gray-700 mb-2">Name</label>
   <input type="text" id="name" name="name" required
-    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-red focus:outline-none text-gray-900 bg-white">
+    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-primary focus:outline-none text-gray-900 bg-white">
 </div>
 <div>
   <label for="phone" class="block text-sm font-bold text-gray-700 mb-2">Phone Number</label>
   <input type="tel" id="phone" name="phone" required
-    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-red focus:outline-none text-gray-900 bg-white">
+    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-primary focus:outline-none text-gray-900 bg-white">
 </div>
 </div>
 
@@ -23,12 +23,12 @@
 <div>
   <label for="email" class="block text-sm font-bold text-gray-700 mb-2">Email</label>
   <input type="email" id="email" name="email" required
-    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-red focus:outline-none text-gray-900 bg-white">
+    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-primary focus:outline-none text-gray-900 bg-white">
 </div>
 <div>
   <label for="service" class="block text-sm font-bold text-gray-700 mb-2">Service Needed</label>
   <select id="service" name="service"
-    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-red focus:outline-none text-gray-900 bg-white">
+    class="w-full p-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-primary focus:outline-none text-gray-900 bg-white">
     {% for service in services %}
     <option>{{ service.title }}</option>
     {% endfor %}
@@ -43,10 +43,10 @@
   </label>
   <textarea id="message" name="message" rows="{% if compact %}4{% else %}6{% endif %}" required
     placeholder="Tell us about your project..."
-    class="w-full p-3 border border-gray-300 rounded-xl resize-none focus:ring-2 focus:ring-brand-red focus:outline-none text-gray-900 bg-white"></textarea>
+    class="w-full p-3 border border-gray-300 rounded-xl resize-none focus:ring-2 focus:ring-brand-primary focus:outline-none text-gray-900 bg-white"></textarea>
 </div>
 
-<button type="submit" class="w-full bg-brand-red text-white font-black py-4 rounded-xl hover:opacity-90 transition">
+<button type="submit" class="w-full bg-brand-primary text-white font-black py-4 rounded-xl hover:opacity-90 transition">
   Request Free Estimate
 </button>
 </form>

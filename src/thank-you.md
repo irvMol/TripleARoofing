@@ -6,7 +6,7 @@ permalink: /thank-you/
 
 <section class="bg-brand-dark-grey/90 py-24 px-4">
 <div class="max-w-3xl mx-auto text-center">
-<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-brand-red/10 text-brand-red mb-8">
+<div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-brand-primary/10 text-brand-primary mb-8">
 <span class="text-4xl">✓</span>
 </div>
 <h1 class="text-5xl font-black text-white tracking-tight mb-6">
@@ -21,7 +21,7 @@ permalink: /thank-you/
 </p>
 
 href="tel:{{ business.phone }}"
-class="text-brand-red font-black text-2xl hover:underline"
+class="text-brand-primary font-black text-2xl hover:underline"
 
 >
 
@@ -31,7 +31,7 @@ class="text-brand-red font-black text-2xl hover:underline"
 </div>
 
 href="/"
-class="inline-flex items-center justify-center bg-brand-red text-white font-black py-4 px-8 rounded-full hover:opacity-90 transition"
+class="inline-flex items-center justify-center bg-brand-primary text-white font-black py-4 px-8 rounded-full hover:opacity-90 transition"
 
 > Return Home
 > </a>

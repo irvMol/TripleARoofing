@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ title or business.name }}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Archivo+Black&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/assets/css/output.css">
 <style>
   :root {
-    --color-brand-red: {{ theme.primaryColor }};
+    --color-brand-primary: {{ theme.primaryColor }};
     --color-brand-dark-grey: {{ theme.darkColor }};
     --color-brand-grey: {{ theme.greyColor }};
   }
@@ -21,18 +24,14 @@
 <header class="sticky top-0 z-50 bg-brand-dark-grey/90 backdrop-blur-sm border-b border-white/10">
 <div class="max-w-6xl mx-auto px-4 h-20 flex justify-between items-center">
 
-<a href="/" class="transition-transform hover:scale-105 flex-shrink-0">
-<img src="{{ site.logo }}" alt="{{ site.logoAlt }}" class="h-12 w-auto" />
-</a>
-
 <!-- Desktop Nav -->
 <nav class="hidden md:block">
 <ul class="flex items-center space-x-8 text-sm font-medium tracking-wide">
-<li><a href="/" class="hover:text-brand-red transition-colors">HOME</a></li>
-<li><a href="/#services" class="hover:text-brand-red transition-colors">SERVICES</a></li>
-<li><a href="/gallery/" class="hover:text-brand-red transition-colors">GALLERY</a></li>
+<li><a href="/" class="hover:text-brand-primary transition-colors">HOME</a></li>
+<li><a href="/#services" class="hover:text-brand-primary transition-colors">SERVICES</a></li>
+<li><a href="/gallery/" class="hover:text-brand-primary transition-colors">GALLERY</a></li>
 <li>
-<a href="/contact" class="bg-brand-red px-5 py-2 rounded shadow-lg hover:bg-red-700 transition-all">
+<a href="/contact" class="bg-brand-primary px-5 py-2 rounded shadow-lg hover:bg-red-700 transition-all">
 CONTACT
 </a>
 </li>
@@ -55,7 +54,7 @@ CONTACT
 <li><a href="/#services" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors">SERVICES</a></li>
 <li><a href="/gallery/" class="block px-4 py-3 rounded-lg hover:bg-white/5 transition-colors">GALLERY</a></li>
 <li class="pt-2">
-<a href="/contact" class="block text-center bg-brand-red px-5 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-all">CONTACT</a>
+<a href="/contact" class="block text-center bg-brand-primary px-5 py-3 rounded-lg shadow-lg hover:bg-red-700 transition-all">CONTACT</a>
 </li>
 </ul>
 </nav>
@@ -86,19 +85,19 @@ document.addEventListener("DOMContentLoaded", () => {
                         <p class="text-xs text-gray-500 mt-1">Serving {{ business.serviceArea }}</p>
                     </div>
                     <div class="flex space-x-6">
-                        <a href="tel:{{ business.phone }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                        <a href="tel:{{ business.phone }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
                             <span class="text-xs uppercase font-bold tracking-widest">Call</span>
                         </a>
-                        <a href="mailto:{{ business.email }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                        <a href="mailto:{{ business.email }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
                             <span class="text-xs uppercase font-bold tracking-widest">Email</span>
                         </a>
                         {% if business.facebook %}
-                        <a href="{{ business.facebook }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                        <a href="{{ business.facebook }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
                             <span class="text-xs uppercase font-bold tracking-widest">Facebook</span>
                         </a>
                         {% endif %}
                         {% if business.whatsapp %}
-                        <a href="https://wa.me/{{ business.whatsapp }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-red transition-colors">
+                        <a href="https://wa.me/{{ business.whatsapp }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
                             <span class="text-xs uppercase font-bold tracking-widest">Whatsapp</span>
                         </a>
                         {% endif %}
@@ -109,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 <!-- Lightbox Modal -->
 <div id="lightbox" class="hidden fixed inset-0 z-[100] items-center justify-center bg-black/90 opacity-0 transition-opacity duration-300 p-4">
-  <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl leading-none hover:text-brand-red transition-colors" aria-label="Close">
+  <button id="lightbox-close" class="absolute top-6 right-6 text-white text-4xl leading-none hover:text-brand-primary transition-colors" aria-label="Close">
     &times;
   </button>
   <figure class="max-w-4xl max-h-full flex flex-col items-center">

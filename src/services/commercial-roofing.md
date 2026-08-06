@@ -8,9 +8,9 @@ heroImage: /assets/images/commercial-hero.jpg
 
 serviceImage: /assets/images/commercial-detail.jpg
 
-draft: true
+draft: false
 
-permalink: /services/commercial/
+permalink: /services/commercial-roofing/
 ---
 
 We provide dependable commercial roofing services for businesses and property owners looking to protect their investment and minimize long-term maintenance costs.

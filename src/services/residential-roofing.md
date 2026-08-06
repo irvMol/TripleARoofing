@@ -9,9 +9,9 @@ heroImage: /assets/images/residential-hero.jpg
 
 serviceImage: /assets/images/residential-detail.jpg
 
-draft: true
+draft: false
 
-permalink: /services/residential/
+permalink: /services/residential-roofing/
 ---
 
 We provide dependable residential roofing services for homeowners looking to protect and improve their property.

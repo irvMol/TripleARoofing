@@ -1,8 +1,8 @@
 ---
 layout: hero.njk
-hero_title: Your Roofing Solution
-hero_subtitle: Expert roofing and storm restoration services for homeowners and businesses across
-hero_cta_text: Get Your Free Estimate
+hero_title: Your DFW Roofing Solution
+hero_subtitle: Expert roofing and storm restoration solutions for homeowners and businesses throughout
+hero_cta_text: Contact Us
 permalink: /
 templateEngineOverride: njk
 ---
@@ -18,7 +18,6 @@ templateEngineOverride: njk
 {% else %}
   {% include "partials/services-grid.njk" %}
 {% endif %}
-
 <!-- 2. Conversion Section -->
 <section class="grid grid-cols-1 md:grid-cols-2 gap-12 w-full items-stretch">
 <div class="bg-brand-dark-grey p-12 rounded-3xl shadow-2xl flex flex-col justify-center">

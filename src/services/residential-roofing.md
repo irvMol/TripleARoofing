@@ -14,16 +14,16 @@ draft: false
 permalink: /services/residential-roofing/
 ---
 
-We provide dependable residential roofing services for homeowners looking to protect and improve their property.
+We provide dependable residential roofing solutions for homeowners looking to protect their families, improve curb appeal, and maintain the value of their homes across the Dallas-Fort Worth area.
 
-**Our team specializes in:**
+**Our Team Specializes In**
 
-- Roof replacements
-- Leak repairs
-- Shingle installation
-- Storm damage restoration
-- Preventative maintenance
+- Residential roof replacements
+- Architectural and luxury shingles
+- Roof repairs and leak detection
+- Storm and hail damage repairs
+- Preventative roof inspections and maintenance
 
-**Built for Long-Term Protection**
+**Built for Durability & Performance**
 
-Every roofing project is completed with careful attention to detail, dependable workmanship, and materials designed for long-term durability.
+Our residential roofing solutions are designed to handle the Texas heat, hail, heavy rain, and high winds that homeowners experience throughout the Dallas-Fort Worth area. We focus on quality workmanship and dependable roofing systems that provide lasting protection for your home.

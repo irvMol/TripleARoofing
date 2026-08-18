@@ -13,16 +13,16 @@ draft: false
 permalink: /services/luxury-shingles/
 ---
 
-We provide dependable roofing shingles for businesses and property owners looking to protect their investment and minimize long-term maintenance costs.
+We provide high-quality luxury shingle roofing for homeowners and property owners looking for enhanced curb appeal, reliable protection, and a premium roofing solution built for the Texas climate.
 
 **Our Team Specializes In**
 
-- Commercial roof replacements
-- Flat roofing systems
-- TPO and modified bitumen roofing
-- Leak detection and repair
-- Preventative maintenance programs
+- Luxury shingle roof replacements
+- Premium architectural roofing systems
+- New roof installation and upgrades
+- Storm damage inspection and repairs
+- Preventative roof maintenance programs
 
 **Built for Durability & Performance**
 
-Our commercial roofing solutions are designed to withstand harsh weather conditions while providing long-term protection, energy efficiency, and reliable performance for your property.
+Our luxury shingle roofing solutions combine premium appearance with dependable protection against the heat, wind, hail, and severe weather conditions common throughout the Dallas-Fort Worth area. We install roofing systems designed to enhance your property's appearance while providing reliable, long-term performance.

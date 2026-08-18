@@ -13,16 +13,16 @@ draft: false
 permalink: /services/gutters/
 ---
 
-We provide dependable roofing gutters for businesses and property owners looking to protect their investment and minimize long-term maintenance costs.
+We provide dependable gutter solutions for homeowners and property owners looking to protect their roofs, foundations, landscaping, and investment from water damage across the Dallas-Fort Worth area.
 
 **Our Team Specializes In**
 
-- Commercial roof replacements
-- Flat roofing systems
-- TPO and modified bitumen roofing
-- Leak detection and repair
-- Preventative maintenance programs
+- Gutter installation and replacement
+- Seamless gutter systems
+- Gutter repairs and maintenance
+- Downspout installation and extensions
+- Gutter cleaning and drainage solutions
 
 **Built for Durability & Performance**
 
-Our commercial roofing solutions are designed to withstand harsh weather conditions while providing long-term protection, energy efficiency, and reliable performance for your property.
+Our gutter solutions are designed to handle the heavy rainfall and sudden storms common throughout the Dallas-Fort Worth area. Properly installed gutters help direct water away from your roof, siding, foundation, and landscaping while providing reliable drainage and long-term protection for your property.

@@ -13,16 +13,16 @@ draft: false
 permalink: /services/metal-roofs/
 ---
 
-We provide dmetal roofs for businesses and property owners looking to protect their investment and minimize long-term maintenance costs.
+We provide durable metal roofing systems for businesses and property owners looking for long-lasting protection, energy efficiency, and dependable performance throughout the Dallas-Fort Worth area.
 
 **Our Team Specializes In**
 
-- Commercial roof replacements
-- Flat roofing systems
-- TPO and modified bitumen roofing
-- Leak detection and repair
-- Preventative maintenance programs
+- Residential and commercial metal roof replacements
+- Standing seam metal roofing systems
+- Metal roof installation and upgrades
+- Roof repairs and leak detection
+- Preventative maintenance and inspections
 
 **Built for Durability & Performance**
 
-Our commercial roofing solutions are designed to withstand harsh weather conditions while providing long-term protection, energy efficiency, and reliable performance for your property.
+Our metal roofing solutions are built to withstand the Texas heat, strong winds, heavy rain, and unpredictable weather conditions found across the Dallas-Fort Worth area. With proper installation and maintenance, metal roofing provides long-term protection and dependable performance for your property.

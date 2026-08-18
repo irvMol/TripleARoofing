@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: tpo
+title: TPO
 
-description: Reliable tpo
+description: Reliable TPO
 heroImage: /assets/images/tpo-hero.jpg
 
 serviceImage: /assets/images/tpo-detail.jpg
@@ -13,16 +13,16 @@ draft: false
 permalink: /services/tpo/
 ---
 
-We provide dependable roofing tpo for businesses and property owners looking to protect their investment and minimize long-term maintenance costs.
+We provide dependable TPO roofing systems for businesses and property owners looking for durable protection, energy efficiency, and lower long-term maintenance costs across the Dallas-Fort Worth area.
 
-**Our Team Specializes In**
+Our Team Specializes In
 
-- Commercial roof replacements
-- Flat roofing systems
-- TPO and modified bitumen roofing
-- Leak detection and repair
-- Preventative maintenance programs
+Commercial TPO roof replacements
+Single-ply membrane roofing systems
+TPO installation for flat and low-slope roofs
+Roof leak detection and repairs
+Preventative roof maintenance programs
 
-**Built for Durability & Performance**
+Built for Durability & Performance
 
-Our commercial roofing solutions are designed to withstand harsh weather conditions while providing long-term protection, energy efficiency, and reliable performance for your property.
+Our TPO roofing solutions are designed to handle the intense Texas heat, heavy rain, and changing weather conditions common throughout the Dallas-Fort Worth area. We focus on reliable installation and long-lasting protection to help keep your property dry, efficient, and protected year after year.

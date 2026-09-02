@@ -2,7 +2,7 @@
 layout: base.njk
 templateEngineOverride: njk
 title: Our Services | {{ business.name }}
-description: Explore our full range of roofing and construction services across {{ business.serviceArea }}.
+description: Explore our full range of roofing and construction services across the Dallas - Forth Worth Metroplex
 permalink: /services/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: hero.njk
 hero_title: Your DFW Roofing Solution
-hero_subtitle: Expert roofing and storm restoration solutions for homeowners and businesses throughout
+hero_subtitle: Affordable, Attentive & Action-Driven roofing and storm restoration solutions for homeowners and businesses throughout
 hero_cta_text: Contact Us
 permalink: /
 templateEngineOverride: njk

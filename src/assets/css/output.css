@@ -808,6 +808,12 @@
   .bg-brand-dark-grey {
     background-color: var(--color-brand-dark-grey);
   }
+  .bg-brand-dark-grey\/80 {
+    background-color: color-mix(in srgb, #d1d5db 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-brand-dark-grey) 80%, transparent);
+    }
+  }
   .bg-brand-dark-grey\/90 {
     background-color: color-mix(in srgb, #d1d5db 90%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1536,6 +1542,11 @@
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:grid-cols-2 {

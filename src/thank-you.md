@@ -19,20 +19,16 @@ permalink: /thank-you/
 <p class="text-white font-semibold mb-2">
     Need immediate assistance?
 </p>
-
+<a
 href="tel:{{ business.phone }}"
 class="text-brand-primary font-black text-2xl hover:underline"
-
 >
-
     {{ business.phoneDisplay }}
-
 </a>
 </div>
-
+<a
 href="/"
 class="inline-flex items-center justify-center bg-brand-primary text-white font-black py-4 px-8 rounded-full hover:opacity-90 transition"
-
 > Return Home
 > </a>
 

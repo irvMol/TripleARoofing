@@ -40,6 +40,11 @@ module.exports = [
         image: '/assets/images/commercial-01.jpg',
         alt: 'Commercial roof refresh',
       },
+      {
+        type: 'image',
+        image: '/assets/images/commercial-02.jpg',
+        alt: 'Commercial repairs and maintenance',
+      },
     ],
   },
   {

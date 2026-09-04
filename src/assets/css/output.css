@@ -772,6 +772,9 @@
   .bg-\[\#1a1a1a\] {
     background-color: #1a1a1a;
   }
+  .bg-\[\#2A2A2A\]\/80 {
+    background-color: color-mix(in oklab, #2A2A2A 80%, transparent);
+  }
   .bg-\[\#2f2f2f\] {
     background-color: #2f2f2f;
   }
@@ -807,12 +810,6 @@
   }
   .bg-brand-dark-grey {
     background-color: var(--color-brand-dark-grey);
-  }
-  .bg-brand-dark-grey\/80 {
-    background-color: color-mix(in srgb, #d1d5db 80%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-brand-dark-grey) 80%, transparent);
-    }
   }
   .bg-brand-dark-grey\/90 {
     background-color: color-mix(in srgb, #d1d5db 90%, transparent);

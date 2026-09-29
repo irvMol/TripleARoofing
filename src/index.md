@@ -11,7 +11,7 @@ templateEngineOverride: njk
 <div class="text-center mb-16" id="services">
   <h2 class="font-display text-4xl font-extrabold text-white tracking-tight">Our Expert Services</h2>
   <div class="h-1.5 w-24 bg-brand-primary mx-auto mt-6 rounded-full"></div>
-  <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg">From minor repairs to full scale storm restoration, we provide invaluable experience and durable results.</p>
+  <p class="mt-6 max-w-2xl mx-auto text-lg">From minor repairs to full scale storm restoration, we provide invaluable experience and durable results.</p>
 </div>
 {% if site.servicesStyle == "carousel" %}
   {% include "partials/services-carousel.njk" %}

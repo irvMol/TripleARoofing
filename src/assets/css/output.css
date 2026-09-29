@@ -772,8 +772,8 @@
   .bg-\[\#1a1a1a\] {
     background-color: #1a1a1a;
   }
-  .bg-\[\#2A2A2A\]\/80 {
-    background-color: color-mix(in oklab, #2A2A2A 80%, transparent);
+  .bg-\[\#2A2A2A\]\/50 {
+    background-color: color-mix(in oklab, #2A2A2A 50%, transparent);
   }
   .bg-\[\#2f2f2f\] {
     background-color: #2f2f2f;

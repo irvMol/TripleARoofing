@@ -96,9 +96,9 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span class="text-xs uppercase font-bold tracking-widest">Facebook</span>
                         </a>
                         {% endif %}
-                        {% if business.whatsapp %}
-                        <a href="https://wa.me/{{ business.whatsapp }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
-                            <span class="text-xs uppercase font-bold tracking-widest">Whatsapp</span>
+                        {% if business.instagram %}
+                        <a href="{{ business.instagram}}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
+                            <span class="text-xs uppercase font-bold tracking-widest">Instagram</span>
                         </a>
                         {% endif %}
                     </div>

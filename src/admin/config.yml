@@ -1,24 +1,24 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/YOUR_REPO_NAME
+  repo: irvMol/TripleARoofing
   branch: main
-  base_url: https://YOUR_DOMAIN
+  base_url: https://triplearoofs.com
   auth_endpoint: /api/auth
 
-# Cloudinary media library — images never touch your VPS
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: CLOUDINARY_CLOUD_NAME
-    api_key: CLOUDINARY_API_KEY
+# # Cloudinary media library — images never touch your VPS
+# media_library:
+#   name: cloudinary
+#   config:
+#     cloud_name: CLOUDINARY_CLOUD_NAME
+#     api_key: CLOUDINARY_API_KEY
 
 # Fallback local media folder (used if cloudinary is not configured)
 media_folder: src/assets/images
 public_folder: /assets/images
 
 # Site URL for previews
-site_url: https://YOUR_DOMAIN
-display_url: https://YOUR_DOMAIN
+site_url: https://triplearoofs.com
+display_url: https://triplearoofs.com
 
 collections:
   # ── Service Pages ──────────────────────────────────────
@@ -81,3 +81,16 @@ collections:
               widget: string,
               required: false,
             }
+          - {
+              label: Instagram URL,
+              name: instagram,
+              widget: string,
+              required: false,
+            }
+          - label: Stats
+            name: stats
+            widget: object
+            required: false
+            fields:
+              - { label: Years in Business, name: years, widget: string }
+              - { label: Jobs Completed, name: jobs, widget: string }

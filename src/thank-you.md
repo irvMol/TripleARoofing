@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Thank You | {{ business.name }}
+title: Thank You | Triple A Roofing
 permalink: /thank-you/
 ---
 
@@ -28,9 +28,9 @@ class="text-brand-primary font-black text-2xl hover:underline"
 </div>
 <a
 href="/"
-class="inline-flex items-center justify-center bg-brand-primary text-white font-black py-4 px-8 rounded-full hover:opacity-90 transition"
-> Return Home
-> </a>
+class="inline-flex items-center justify-center bg-brand-primary text-white font-black py-4 px-8 rounded-full hover:opacity-90 transition">
+Return Home
+ </a>
 
 </div>
 </section>

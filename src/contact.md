@@ -18,7 +18,7 @@ templateEngineOverride: njk
         Reach out for a consultation, quote, or to learn more about our services.
       </p>
       <a
-        href="{{ business.phone }}"
+        href="tel:{{ business.phone }}"
         class="inline-block mt-6 text-brand-primary font-black text-2xl hover:underline"
       >
         {{ business.phoneDisplay }}

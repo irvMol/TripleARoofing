@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin
 # Allow everything else
 Allow: /
-Sitemap: https://YOUR_DOMAIN/sitemap.xml
+Sitemap: https://triplearoofs.com/sitemap.xml

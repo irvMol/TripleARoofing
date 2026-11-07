@@ -42,6 +42,10 @@ module.exports = function (eleventyConfig) {
     return dt.toFormat(format);
   });
 
+  eleventyConfig.addFilter('isoDate', (d) =>
+    new Date(d).toISOString().slice(0, 10),
+  );
+
   // 4. JSON dump filter, for embedding data (e.g. gallery) as inline JSON
   eleventyConfig.addFilter('dump', (value) => JSON.stringify(value));
 

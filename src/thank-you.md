@@ -1,7 +1,8 @@
 ---
 layout: base.njk
-title: Thank You | Triple A Roofing
+title: Thank You
 permalink: /thank-you/
+noindex: true
 ---
 
 <section class="bg-brand-dark-grey/90 py-24 px-4">

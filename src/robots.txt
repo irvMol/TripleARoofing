@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /admin
+Disallow: /admin, /thank-you/
 # Allow everything else
 Allow: /
 Sitemap: https://triplearoofs.com/sitemap.xml

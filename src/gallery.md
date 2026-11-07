@@ -1,6 +1,6 @@
 ---
 layout: gallery.njk
-title: Project Gallery
-description: Showcase recent work and highlight the quality of your services.
+title: Roofing Project Gallery
+description: Photos and drone video of recent residential and commercial roofing projects completed by Triple A Roofing across Dallas-Fort Worth.
 permalink: /gallery/
 ---

@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: TPO
+title: TPO Roofing in Dallas-Fort Worth, TX
 
-description: Reliable TPO
+description: TPO flat roof installation and replacement for commercial buildings in Dallas-Fort Worth. Energy-efficient, reflective roofing systems. Free estimates.
 heroImage: /assets/images/tpo-hero.jpg
 
 serviceImage: /assets/images/tpo-detail.jpg

@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: Gutters
+title: Gutter Installation in Dallas-Fort Worth, TX
 
-description: Reliable gutters
+description: Gutter installation and replacement in Dallas-Fort Worth to protect your roof, siding and foundation from water damage. Free estimates.
 heroImage: /assets/images/gutters-hero.jpg
 
 serviceImage: /assets/images/gutters-detail.jpg

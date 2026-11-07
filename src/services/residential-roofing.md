@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: Residential Roofing
+title: Residential Roofing in Dallas-Fort Worth, TX
 
-description: High-quality residential roofing solutions designed for durability, protection, and curb appeal.
+description: Residential roof replacement and installation across Dallas-Fort Worth. Durable shingle and metal roofs built for Texas hail and heat. Free estimates.
 
 heroImage: /assets/images/residential-hero.jpg
 

@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: Luxury Shingles
+title: Luxury Shingles in Dallas-Fort Worth, TX
 
-description: Reliable luxury shingles
+description: Premium designer shingle roofs in Dallas-Fort Worth that combine high-end curb appeal with long-term durability. Free estimates.
 heroImage: /assets/images/shingles-hero.jpg
 
 serviceImage: /assets/images/shingles-detail.jpg

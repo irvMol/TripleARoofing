@@ -31,6 +31,11 @@ collections:
       - { label: Layout, name: layout, widget: hidden, default: service.njk }
       - { label: Page Title, name: title, widget: string }
       - { label: Description, name: description, widget: text }
+      - label: SEO Title
+        name: seoTitle
+        widget: string
+        required: false
+        hint: '" | Triple A Roofing" is added automatically. Keep under ~45 characters.'
       - label: Hero Image
         name: heroImage
         widget: image
@@ -66,7 +71,7 @@ collections:
           - { label: Address, name: address, widget: string }
           - { label: Service Area, name: serviceArea, widget: string }
           - label: Business Hours
-            name: hours
+            name: openingHours
             widget: string
             hint: 'e.g. Mon–Fri 8am–6pm, Sat 9am–3pm'
           - {

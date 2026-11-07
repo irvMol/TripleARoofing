@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: Metal Roofs
+title: Metal Roofing in Dallas-Fort Worth, TX
 
-description: Metal Roofs
+description: Standing seam and metal roof installation in Dallas-Fort Worth. Long-lasting, energy-efficient roofing built to stand up to Texas storms. Free estimates.
 heroImage: /assets/images/metal-roofs-hero.jpg
 
 serviceImage: /assets/images/metal-roofs-detail.jpg

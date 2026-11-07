@@ -1,9 +1,9 @@
 ---
 layout: service.njk
 
-title: Repairs
+title: Roof Repair in Dallas-Fort Worth, TX
 
-description: Roofing Repairs
+description: Roof leak, storm, hail and wind damage repair in Dallas-Fort Worth. Fast, reliable repairs that fix the source of the problem. Call for a free estimate.
 heroImage: /assets/images/repair-hero.jpg
 
 serviceImage: /assets/images/repair-detail.jpg

@@ -1,11 +1,13 @@
 {
   "showForm": false,
-  "description": "A modern, reusable website template for service-based businesses.",
-  "logo": "/assets/images/logo/logo.png",
-  "logoAlt": "Your Business Logo",
+  "title": "Triple A Roofing",
+  "description": "Triple A Roofing is a Dallas-Fort Worth roofing contractor offering residential and commercial roofing, roof repairs, metal roofs, TPO and gutters. Free estimates.",  "logo": "/assets/images/logo/logo.png",
+  "logoAlt": "Triple A Roofing logo",
   "siteUrl": "https://triplearoofs.com",
   "heroStyle": "split",
+  "heroImageAlt": "Aerial view of a new standing seam metal roof installed by Triple A Roofing in Dallas-Fort Worth",
   "heroImage": "/assets/images/hero/hero-image.jpg",
   "servicesStyle": "carousel",
-  "galleryStyle": "video"
+  "galleryStyle": "video",
+  "ogImage": "/assets/images/og-image.jpg"
 }

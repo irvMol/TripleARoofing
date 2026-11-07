@@ -4,7 +4,7 @@ const app = express();
 
 const CLIENT_ID = process.env.GITHUB_CLIENT_ID;
 const CLIENT_SECRET = process.env.GITHUB_CLIENT_SECRET;
-const ORIGIN = process.env.ORIGIN || 'https://vigorousroofing.com';
+const ORIGIN = process.env.ORIGIN || 'https://triplearoofs.com';
 
 app.get('/api/auth', (req, res) => {
   const params = new URLSearchParams({

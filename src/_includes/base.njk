@@ -111,24 +111,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         </p>
                         <p class="text-xs text-gray-500 mt-1">Serving {{ business.serviceArea }}</p>
                     </div>
-                    <div class="flex space-x-6">
+                   <div class="flex items-center gap-6">
                         <a href="tel:{{ business.phone }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
-                            <span class="text-xs uppercase font-bold tracking-widest">Call</span>
+                        {% icon "solid", "phone" %}
+                        <span class="text-xs uppercase font-bold tracking-widest">Call</span>
                         </a>
                         <a href="mailto:{{ business.email }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
-                            <span class="text-xs uppercase font-bold tracking-widest">Email</span>
+                        {% icon "solid", "envelope" %}
+                        <span class="text-xs uppercase font-bold tracking-widest">Email</span>
                         </a>
                         {% if business.facebook %}
-                        <a href="{{ business.facebook }}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
-                            <span class="text-xs uppercase font-bold tracking-widest">Facebook</span>
+                        <a href="{{ business.facebook }}" target="_blank" rel="noopener" aria-label="Facebook" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        {% icon "brands", "facebook", "w-5 h-5" %}
                         </a>
                         {% endif %}
                         {% if business.instagram %}
-                        <a href="{{ business.instagram}}" class="flex items-center gap-2 text-gray-300 hover:text-brand-primary transition-colors">
-                            <span class="text-xs uppercase font-bold tracking-widest">Instagram</span>
+                        <a href="{{ business.instagram }}" target="_blank" rel="noopener" aria-label="Instagram" class="text-gray-300 hover:text-brand-primary transition-colors">
+                        {% icon "brands", "instagram", "w-5 h-5" %}
                         </a>
                         {% endif %}
-                    </div>
+                        </div>
                 </div>
             </div>
         </footer>

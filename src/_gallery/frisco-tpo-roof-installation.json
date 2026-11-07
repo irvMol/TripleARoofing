@@ -1,0 +1,29 @@
+{
+  "title": "Frisco TPO Roof Installation",
+  "date": "2026-01-01",
+  "category": "TPO Roofs",
+  "location": "Frisco, Texas",
+  "cover": "/assets/images/tpo-roof-poster.jpg",
+  "media": [
+    {
+      "type": "image",
+      "image": "/assets/images/tpo-01.jpg",
+      "alt": "TPO roof membrane installation in progress"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/tpo-02.jpg",
+      "alt": "Close-up of TPO roof membrane seam detail"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/tpo-03.jpg",
+      "alt": "TPO roof membrane installation in progress with flashing detail"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/tpo-04.jpg",
+      "alt": "Finished TPO roof installation with flashing and venting detail"
+    }
+  ]
+}

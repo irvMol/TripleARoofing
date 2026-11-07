@@ -1,0 +1,44 @@
+{
+  "title": "Plano Shingle Roof Install",
+  "date": "2026-01-04",
+  "category": "Shingles",
+  "location": "Plano, Texas",
+  "cover": "/assets/images/shingles-poster.jpg",
+  "media": [
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-01.jpg",
+      "alt": "Detail shot of architectural shingle pattern"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-02.jpg",
+      "alt": "Finished shingle roof from ground level"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-03.jpg",
+      "alt": "Close-up of new shingle installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-04.jpg",
+      "alt": "Finished shingle roof from ground level"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-05.jpg",
+      "alt": "Close-up of new shingle installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-06.jpg",
+      "alt": "Finished shingle roof from ground level"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/shingles-07.jpg",
+      "alt": "Close-up of new shingle installation"
+    }
+  ]
+}

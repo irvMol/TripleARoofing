@@ -1,0 +1,29 @@
+{
+  "title": "Fort Worth Commercial Roof",
+  "date": "2026-01-06",
+  "category": "Commercial Roofing",
+  "location": "Fort Worth, Texas",
+  "cover": "/assets/images/commercial-poster.jpg",
+  "media": [
+    {
+      "type": "image",
+      "image": "/assets/images/commercial-01.jpg",
+      "alt": "Commercial roof refresh"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/commercial-02.jpg",
+      "alt": "Commercial repairs and maintenance"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/commercial-03.jpg",
+      "alt": "Commercial roof refresh"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/commercial-04.jpg",
+      "alt": "Commercial installation and maintenance"
+    }
+  ]
+}

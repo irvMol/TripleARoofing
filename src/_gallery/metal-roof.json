@@ -1,0 +1,34 @@
+{
+  "title": "Metal Roof",
+  "date": "2026-01-03",
+  "category": "Metal Roofs",
+  "location": "Irving, Texas",
+  "cover": "/assets/images/metal-roof-poster.jpg",
+  "media": [
+    {
+      "type": "image",
+      "image": "/assets/images/metal-roof-01.jpg",
+      "alt": "Standing seam metal roof panels installed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/metal-roof-02.jpg",
+      "alt": "Close-up of metal roof seam and flashing detail"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/metal-roof-03.jpg",
+      "alt": "Standing seam metal roof panels installed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/metal-roof-04.jpg",
+      "alt": "Close-up of metal roof seam and flashing detail"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/metal-roof-05.jpg",
+      "alt": "Standing seam metal roof panels installed"
+    }
+  ]
+}

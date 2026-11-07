@@ -13,6 +13,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/assets/js');
   eleventyConfig.addPassthroughCopy('src/robots.txt');
 
+  eleventyConfig.addWatchTarget('src/_gallery/');
+
   // 2. Add the Responsive Image Shortcode
   eleventyConfig.addNunjucksAsyncShortcode(
     'image',

@@ -1,0 +1,44 @@
+{
+  "title": "Grand Prairie Storm Damage Repair",
+  "date": "2026-01-02",
+  "category": "Repairs",
+  "location": "Grand Prairie, Texas",
+  "cover": "/assets/images/repair-poster.jpg",
+  "media": [
+    {
+      "type": "image",
+      "image": "/assets/images/repair-01.jpg",
+      "alt": "Roof section before storm damage repair"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-02.jpg",
+      "alt": "Roof section after storm damage repair completed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-03.jpg",
+      "alt": "venting and flashing repaired after storm damage repair completed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-04.jpg",
+      "alt": "wood decking replaced and new shingles installed after storm damage repair"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-05.jpg",
+      "alt": "hole damage repair completed with new shingles installed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-06.jpg",
+      "alt": "Clean up services after storm damage repair completed"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/repair-07.jpg",
+      "alt": "Repair with underlay and new shingles installed"
+    }
+  ]
+}

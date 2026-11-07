@@ -1,0 +1,56 @@
+{
+  "title": "Dallas Residential Reroof",
+  "date": "2026-01-07",
+  "category": "Residential Roofing",
+  "location": "Dallas, Texas",
+  "cover": "/assets/images/residential-poster.jpg",
+  "media": [
+    {
+      "type": "video",
+      "src": "/assets/videos/residential-01-drone.mp4",
+      "poster": "/assets/images/residential-01-poster.jpg",
+      "alt": "Aerial drone footage of completed roof installation"
+    },
+    {
+      "type": "video",
+      "src": "/assets/videos/residential-02-drone.mp4",
+      "poster": "/assets/images/residential-02-poster.jpg",
+      "alt": "Aerial drone footage of completed roof installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-01.jpg",
+      "alt": "Close-up of new shingle installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-02.jpg",
+      "alt": "Drone view of new shingle installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-03.jpg",
+      "alt": "Close-up of new shingle installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-04.jpg",
+      "alt": "New shingle installation with new gutters and downspouts"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-05.jpg",
+      "alt": "Drone shot of completed roof installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-06.jpg",
+      "alt": "Drone shot of completed roof installation"
+    },
+    {
+      "type": "image",
+      "image": "/assets/images/residential-07.jpg",
+      "alt": "Close-up of new shingle installation"
+    }
+  ]
+}

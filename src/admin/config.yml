@@ -1,3 +1,5 @@
+local_backend: true
+
 backend:
   name: github
   repo: irvMol/TripleARoofing
@@ -50,7 +52,92 @@ collections:
       - label: Content
         name: body
         widget: markdown
-        hint: 'Main service description — supports bullet points and headings'
+        hint:
+          'Main service description — supports bullet points and headings'
+
+          # ── Gallery Projects ───────────────────────────────────
+  - name: gallery
+    label: Gallery Projects
+    label_singular: Project
+    folder: src/_gallery
+    extension: json
+    format: json
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    identifier_field: title
+    summary: '{{title}} — {{location}}'
+    sortable_fields: ['date', 'title']
+    editor: { preview: false }
+    media_folder: /src/assets/images/gallery
+    public_folder: /assets/images/gallery
+    fields:
+      - {
+          label: Project Name,
+          name: title,
+          widget: string,
+          hint: 'e.g. Dallas Shingle Roof Replacement',
+        }
+      - label: Date
+        name: date
+        widget: datetime
+        date_format: 'MM/DD/YYYY'
+        time_format: false
+        format: 'YYYY-MM-DD'
+        hint: 'Newest projects show first in the gallery'
+      - {
+          label: Category,
+          name: category,
+          widget: string,
+          hint: 'e.g. Residential Roofing, Gutters, Repairs',
+        }
+      - {
+          label: Location,
+          name: location,
+          widget: string,
+          hint: 'e.g. Plano, Texas',
+        }
+      - label: Cover Photo
+        name: cover
+        widget: image
+        required: false
+        hint: 'Shown on the gallery grid. Leave empty to use the first photo below.'
+      - label: Photos & Videos
+        name: media
+        widget: list
+        label_singular: item
+        summary: '{{fields.alt}}'
+        types:
+          - label: Photo
+            name: image
+            widget: object
+            summary: '{{fields.alt}}'
+            fields:
+              - { label: Photo, name: image, widget: image }
+              - {
+                  label: Description,
+                  name: alt,
+                  widget: string,
+                  hint: 'Describe the photo, e.g. New gutters along the roofline',
+                }
+          - label: Video
+            name: video
+            widget: object
+            summary: '{{fields.alt}}'
+            fields:
+              - {
+                  label: Video File,
+                  name: src,
+                  widget: file,
+                  hint: 'MP4 under 20MB. Larger videos should be sent to your web developer.',
+                }
+              - {
+                  label: Poster Image,
+                  name: poster,
+                  widget: image,
+                  required: false,
+                }
+              - { label: Description, name: alt, widget: string }
 
   # ── Site Settings ──────────────────────────────────────
   - name: settings

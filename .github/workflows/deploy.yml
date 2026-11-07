@@ -28,8 +28,6 @@ jobs:
             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm install
             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npm run build:css
             docker compose -f docker-compose.yml -f docker-compose.prod.yml run --rm eleventy npx @11ty/eleventy
-            docker compose -f docker-compose.yml -f docker-compose.prod.yml down
-            docker volume rm site_site_output || true
             echo "=== Checking volume contents ==="
             docker run --rm -v site_site_output:/check alpine find /check -maxdepth 1
             echo "=== Disk space remaining ==="

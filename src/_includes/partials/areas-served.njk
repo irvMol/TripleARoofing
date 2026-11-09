@@ -1,0 +1,14 @@
+{% if business.areaServed %}
+<section class="py-16" aria-labelledby="areas-heading">
+<div class="max-w-5xl mx-auto text-center">
+<h2 id="areas-heading" class="font-display text-3xl font-extrabold text-white tracking-tight">Areas We Serve</h2>
+<div class="h-1.5 w-24 bg-brand-primary mx-auto mt-6 rounded-full"></div>
+<p class="mt-6 text-gray-300 max-w-2xl mx-auto">{% if business.city %}Based in {{ business.city }}, we{% else %}We{% endif %} serve homeowners and businesses across {{ business.serviceArea }}, including:</p>
+<ul class="mt-8 flex flex-wrap justify-center gap-3">
+{% for city in business.areaServed %}
+<li class="px-4 py-2 rounded-full border border-white/15 bg-white/5 text-sm text-gray-200">{{ city }}</li>
+{% endfor %}
+</ul>
+</div>
+</section>
+{% endif %}

@@ -14,6 +14,7 @@ layout: base.njk
         <div class="w-56 mb-10 mx-auto lg:mx-0">
           <img src="{{ site.logo }}" alt="{{ site.logoAlt }}" class="w-full border-b-4 border-brand-primary pb-4">
         </div>
+        {% if hero_eyebrow %}<p class="uppercase tracking-widest text-sm text-white/80 font-bold mb-4">{{ hero_eyebrow }}</p>{% endif %}
         <h1 class="font-display text-4xl md:text-6xl font-black leading-tight mb-6">{{ hero_title }}</h1>
         <p class="text-lg text-gray-300 leading-relaxed mb-10 max-w-xl mx-auto lg:mx-0">{{ hero_subtitle }} {{ business.serviceArea }}.</p>
         <div class="flex flex-wrap gap-4 justify-center lg:justify-start">
@@ -38,9 +39,19 @@ layout: base.njk
 {% else %}
 <header class="relative overflow-hidden bg-brand-dark-grey text-white min-h-[70vh] flex items-center">
   <div class="absolute inset-0 z-0">
-    <video autoplay muted loop playsinline poster="/assets/images/hero-poster.png" class="h-full w-full object-cover grayscale brightness-[0.3] contrast-[1.1]">
-      <source src="/assets/videos/video-hero.mp4" type="video/mp4">
-    </video>
+    <img src="/assets/images/hero-poster.jpg" alt="" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover grayscale brightness-[0.3] contrast-[1.1]">
+    <video id="hero-video" muted loop playsinline preload="none" poster="/assets/images/hero-poster.jpg" data-src="/assets/videos/video-hero.mp4" class="relative h-full w-full object-cover grayscale brightness-[0.3] contrast-[1.1]" aria-hidden="true"></video>
+    <script>
+    (() => {
+      const v = document.getElementById("hero-video");
+      const big = window.matchMedia("(min-width: 768px)").matches;
+      const calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const saver = navigator.connection && navigator.connection.saveData;
+      if (!v || !big || calm || saver) return;
+      v.src = v.dataset.src;
+      v.play().catch(() => {});
+    })();
+    </script>
   </div>
   <div class="absolute inset-0 z-10 opacity-20 pointer-events-none">
     <div class="absolute -top-32 -right-32 w-96 h-96 rounded-full bg-brand-primary blur-3xl"></div>
@@ -52,6 +63,7 @@ layout: base.njk
           <img src="{{ site.logo }}" alt="{{ site.logoAlt }}" class="h-auto w-full border-b-4 border-brand-primary pb-4">
         </div>
       </div>
+      {% if hero_eyebrow %}<p class="uppercase tracking-widest text-sm text-white/80 font-bold mb-4">{{ hero_eyebrow }}</p>{% endif %}
       <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.05] mb-6 drop-shadow-lg">{{ hero_title }}</h1>
       <p class="max-w-xl mx-auto text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-10 px-2 drop-shadow-md">{{ hero_subtitle }} {{ business.serviceArea }}</p>
       <a href="tel:{{ business.phone }}" class="inline-flex items-center justify-center bg-brand-primary hover:brightness-90 text-white font-bold py-4 px-8 rounded-full transition duration-300 shadow-xl hover:scale-[1.02]">{{ hero_cta_text }}</a>

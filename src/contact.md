@@ -19,6 +19,9 @@ permalink: /contact/
       <p class="text-gray-300 mt-4 text-lg">
         Reach out for a consultation, quote, or to learn more about our services.
       </p>
+      {% if business.hoursDisplay %}
+      <p class="text-gray-400 mt-2 text-sm">Hours: {{ business.hoursDisplay }}</p>
+      {% endif %}
       <a
         href="tel:{{ business.phone }}"
         class="inline-block mt-6 text-brand-primary font-black text-2xl hover:underline"

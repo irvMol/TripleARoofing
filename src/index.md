@@ -1,7 +1,8 @@
 ---
+hero_eyebrow: Your DFW Roofing Solution
 description: 'Triple A Roofing is a Dallas-Fort Worth roofing contractor for homes and businesses: roof replacement, storm and hail repair, metal, TPO and gutters.'
 layout: hero.njk
-hero_title: Your DFW Roofing Solution
+hero_title: Roofing Contractor in Dallas-Fort Worth
 hero_subtitle: Affordable, Attentive & Action-Driven roofing and storm restoration solutions for homeowners and businesses throughout
 hero_cta_text: Contact Us
 permalink: /
@@ -52,3 +53,4 @@ data-alt="{{ business.serviceArea }} Service Area"
 </div>
 </div>
 </section>
+{% include "partials/areas-served.njk" %}
